@@ -8,7 +8,7 @@ export default async function fetchData(url) {
     }
     catch (error) {
         if (error instanceof Error)
-            console.error("fetchData: " + error.message);
+            console.log('fetchData: ' + error.message);
         return null;
     }
 }
