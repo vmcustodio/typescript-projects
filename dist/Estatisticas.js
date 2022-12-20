@@ -20,10 +20,10 @@ export default class Estatisticas {
         }, 0);
     }
     setPagamento() {
-        countBy(this.transacoes.map(({ pagamento }) => pagamento));
+        return countBy(this.transacoes.map(({ pagamento }) => pagamento));
     }
     setStatus() {
-        countBy(this.transacoes.map(({ status }) => status));
+        return countBy(this.transacoes.map(({ status }) => status));
     }
 }
 //# sourceMappingURL=Estatisticas.js.map
